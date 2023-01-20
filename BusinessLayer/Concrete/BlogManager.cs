@@ -39,7 +39,7 @@ namespace BusinessLayer.Concrete
 		}
 		public List<Blog> GetBlogByID(int id)
 		{
-			return _blogDal.GetListAll();
+			return _blogDal.GetListAll(x=>x.BlogID == id);
 		}
 
 		public List<Blog> GetList()
