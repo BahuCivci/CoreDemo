@@ -13,8 +13,8 @@ namespace DataAccessLayer.Concrete
         //asagıdaki metot da connectıon strıngı tanımlayacagız. need to have optıonsBuılder to do that
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=CoreBlogDb; integrated security=true;TrustServerCertificate=true;");
-            //optionsBuilder.UseSqlServer("server=BAHU;database=CoreBlogDb; integrated security=true;TrustServerCertificate=true;");
+            //optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=CoreBlogDb; integrated security=true;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("server=BAHU;database=CoreBlogDb; integrated security=true;TrustServerCertificate=true;");
             //optionsBuilder.UseSqlServer("server=MRK-BDT-DV12329;database=CoreBlogDb; integrated security=true;TrustServerCertificate=true;");
             //Server = localhost\SQLEXPRESS; Database = master; Trusted_Connection = True;
             //MRK - BDT - DV12329\SQLEXPRESS
